@@ -12,9 +12,11 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">NS</span>
-              </div>
+              <img 
+                src="/logo-notext-white.svg" 
+                alt="Neverending Story Logo" 
+                className="w-8 h-8"
+              />
               <h3 className="text-lg font-bold text-accent">Neverending Story</h3>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">

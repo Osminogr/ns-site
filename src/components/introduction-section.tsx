@@ -45,7 +45,7 @@ export function IntroductionSection() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-lg shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1634138666283-a61fe12798cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmNpZW50JTIwY29wcGVyJTIwbWVkaWV2YWwlMjBmb3J0cmVzc3xlbnwxfHx8fDE3NTcyNTQ1MjF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="/image2.png"
                 alt="Ancient fortress"
                 className="w-full h-96 object-cover transform hover:scale-105 transition-transform duration-700"
                 width={600}

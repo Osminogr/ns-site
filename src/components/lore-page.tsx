@@ -19,139 +19,57 @@ const timelineEvents = [
     season: "Пролог",
     title: "Великое Забвение",
     year: "0 лет назад",
-    description: "Мир погрузился в хаос. Древние технологии утрачены, цивилизации пали. Выжившие ищут новые земли среди руин прошлого.",
+    description: "Мир погрузился в хаос. Древние технологии утрачены, цивилизации пали. Выжившие ищут новые земли среди руин прошлого. Новых правил еще нет, а старые забыты...",
     icon: Scroll,
     color: "destructive"
-  },
-  {
-    season: "Сезон I",
-    title: "Первые Поселения",
-    year: "2 месяца назад", 
-    description: "Смелые первопроходцы основали первые деревни. Торговые пути только начинают формироваться между разрозненными общинами.",
-    icon: MapPin,
-    color: "primary"
-  },
-  {
-    season: "Сезон II", 
-    title: "Война Трех Кланов",
-    year: "4 месяца назад",
-    description: "Великий конфликт между Железными Кузнецами, Лесными Хранителями и Песчаными Кочевниками. Их руины до сих пор можно найти в мире.",
-    icon: Swords,
-    color: "accent"
-  },
-  {
-    season: "Сезон III",
-    title: "Эпоха Открытий", 
-    year: "6 месяцев назад",
-    description: "Исследователи обнаружили древние технологии. Основаны первые академии и мастерские. Зарождение новых ремесел.",
-    icon: Crown,
-    color: "secondary"
   }
 ];
 
 const loreArtifacts = [
   {
-    name: "Кристалл Времени",
+    name: "Темпоральный амулет",
     description: "Древний артефакт, позволяющий видеть события прошлых сезонов",
-    location: "Заброшенная башня, координаты: 1247, 890",
-    discovered: "Сезон II",
-    x: 65,
-    y: 25
-  },
-  {
-    name: "Руины Великой Кузницы",
-    description: "Остатки легендарной кузницы Железных Кузнецов",
-    location: "Северные горы, доступна для исследования",
-    discovered: "Сезон I",
-    x: 25,
-    y: 15
-  },
-  {
-    name: "Библиотека Хранителей",
-    description: "Полуразрушенная библиотека с книгами о древних технологиях",
-    location: "Глубины Зачарованного леса",
-    discovered: "Сезон III",
-    x: 45,
-    y: 70
+    location: "Потерян в веках",
+    discovered: "Пролог",
+    x: "",
+    y: ""
   }
 ];
 
 const galleryImages = [
   {
-    url: "https://images.unsplash.com/photo-1711211788461-34d6d7175068?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpZXZhbCUyMGZhbnRhc3klMjBydWlucyUyMGNhc3RsZXxlbnwxfHx8fDE3NTcyODY3OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Замок Железного Короля",
-    season: "Сезон I",
-    description: "Величественная крепость, ставшая символом объединения кланов"
+    url: "/seven-legion.png",
+    title: "Форт седьмого легиона",
+    season: "Пролог",
+    description: "Величественная крепость, ставшая символом возрождения"
   },
   {
-    url: "https://images.unsplash.com/photo-1606293494381-8389881b0e21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYmFuZG9uZWQlMjB2aWxsYWdlJTIwYXBvY2FseXB0aWN8ZW58MXx8fHwxNzU3Mjg2Nzk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Деревня Последней Надежды",
-    season: "Сезон II",
-    description: "Последний оплот выживших перед началом Войны Трех Кланов"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1693745412900-ce12950faa7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmNpZW50JTIwdGVtcGxlJTIwcnVpbnMlMjBzdG9uZXxlbnwxfHx8fDE3NTcyODY4MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Храм Древних Знаний",
-    season: "Сезон III",
-    description: "Место, где были найдены первые чертежи утерянных технологий"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1694609722031-c109b19e2c08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxtZWRpZXZhbCUyMGJsYWNrc21pdGglMjBmb3JnZXxlbnwxfHx8fDE3NTcyODY4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Великая Кузница",
-    season: "Сезон I",
-    description: "Центр металлургии и технологического развития Железных Кузнецов"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1677024346663-18e39a172dd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW50YXN5JTIwbGlicmFyeSUyMGJvb2tzJTIwYW5jaWVudHxlbnwxfHx8fDE3NTcyODY4MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Архивы Хранителей",
-    season: "Сезон III", 
-    description: "Священное место хранения знаний Лесных Хранителей"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1708791576838-2c42aad76841?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkaW5nJTIwcG9zdCUyMG1hcmtldCUyMG1lZGlldmFsfGVufDF8fHx8MTc1NzI4NjgxNHww&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Торговый Пост 'Песчаная Роза'",
-    season: "Сезон II",
-    description: "Главный торговый центр Песчаных Кочевников"
+    url: "/image3.png",
+    title: "Торговая стоянка",
+    season: "Пролог",
+    description: "Здесь начинают путь караваны"
   }
 ];
 
 const legendaryPlayers = [
   {
-    name: "Терон Железнорук",
-    title: "Верховный Кузнец",
-    clan: "Железные Кузнецы",
-    season: "Сезон I",
-    achievement: "Создатель Великой Кузницы",
-    description: "Легендарный мастер, чьи творения до сих пор находят в руинах мира. Объединил разрозненные племена кузнецов.",
-    legacy: "Его техники ковки стали основой для современного ремесла"
-  },
-  {
-    name: "Элара Лесная Тень",
-    title: "Архивариус Знаний",
-    clan: "Лесные Хранители",
-    season: "Сезон III",
-    achievement: "Основатель Библиотеки Хранителей",
-    description: "Мудрая хранительница древних знаний, собравшая крупнейшую коллекцию книг и свитков.",
-    legacy: "Её система каталогизации используется до сих пор"
-  },
-  {
-    name: "Калиф аль-Сахара",
-    title: "Повелитель Караванов", 
-    clan: "Песчаные Кочевники",
-    season: "Сезон II",
-    achievement: "Создатель торговой сети",
-    description: "Великий торговец, установивший первые торговые маршруты между поселениями выживших.",
-    legacy: "Торговые пути, названные его именем, активны и сегодня"
-  },
-  {
-    name: "Мирелла Светоносная",
-    title: "Посредник Мира",
-    clan: "Независимая",
-    season: "Сезон II",
-    achievement: "Завершение Войны Трех Кланов",
-    description: "Дипломат, которая смогла остановить кровопролитную войну и заключить Великое Перемирие.",
-    legacy: "Мирные соглашения основаны на её принципах"
-  }
+    name: "Элион Светоносец",
+    title: "Бог Искры Жизни и Защитник Слабых",
+    clan: "Пантеон Созидания",
+    season: "Эра Рассвета",
+    achievement: "Даровал силу высокой кармы",
+    description: "Добрый и милосердный создатель, подаривший смертным не только жизнь, но и свободную волю. Его свет озаряет путь заблудшим, а его дыхание дарует силы страждущим.",
+    legacy: "Его искра до сих пор живёт в каждом живом существе, даруя им способность к состраданию, надежде и добрым делам."
+},
+{
+  name: "Малгор Бездонный",
+  title: "Бог Вечного Голода и Разрушитель Миров",
+  clan: "Пустота",
+  season: "Эра Безвременья",
+  achievement: "Даровал силу низкой кармы",
+  description: "Древнее зло, рождённое из пустоты между мирами. Не обладая формой, он стремится поглотить всё сущее, дабы утолить свою ненасытную жажду. Его сила — это искушение, предлагающая могущество в обмен на душу.",
+  legacy: "Его шёпот до сих пор звучит в сердцах отчаявшихся, порождая жадность, ненависть и страх, которые пожирают миры изнутри."
+}
 ];
 
 export function LorePage({ onClose }: LorePageProps) {
@@ -421,15 +339,7 @@ export function LorePage({ onClose }: LorePageProps) {
                       ))}
                       
                       {/* Map Labels */}
-                      <div className="absolute top-4 left-4 bg-card/90 backdrop-blur-sm rounded-lg px-3 py-2 border border-border/50">
-                        <p className="text-sm font-semibold text-accent">Северные Горы</p>
-                      </div>
-                      <div className="absolute bottom-4 right-4 bg-card/90 backdrop-blur-sm rounded-lg px-3 py-2 border border-border/50">
-                        <p className="text-sm font-semibold text-accent">Зачарованный Лес</p>
-                      </div>
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card/90 backdrop-blur-sm rounded-lg px-3 py-2 border border-border/50">
-                        <p className="text-sm font-semibold text-accent">Центральные Равнины</p>
-                      </div>
+
                     </div>
                   </CardContent>
                 </Card>

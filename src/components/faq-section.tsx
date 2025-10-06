@@ -61,7 +61,7 @@ export function FAQSection() {
             Ответы на ваши вопросы
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Всё, что вы хотели знать о сервере Endless Story
+            Всё, что вы хотели знать о сервере Neverending Story
           </p>
         </div>
 
@@ -95,13 +95,13 @@ export function FAQSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Badge variant="outline" className="px-4 py-2 text-accent border-accent">
-              💬 Активное сообщество
+              Активное сообщество
             </Badge>
             <Badge variant="outline" className="px-4 py-2 text-primary border-primary">
-              🛠️ Техподдержка 24/7
+              Техподдержка
             </Badge>
             <Badge variant="outline" className="px-4 py-2 text-accent border-accent">
-              📚 Подробные гайды
+              Подробные гайды
             </Badge>
           </div>
         </div>

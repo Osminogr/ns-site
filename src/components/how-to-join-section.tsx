@@ -19,7 +19,7 @@ const steps = [
   {
     number: "02", 
     title: "Ознакомься с правилами и лором",
-    description: "Изучи мир Endless Story и узнай о текущей главе истории",
+    description: "Изучи мир Neverending Story и узнай о текущей главе истории",
     action: "Читать лор"
   },
   {

@@ -14,7 +14,7 @@ export function HeroSection({ onOpenLore }: HeroSectionProps) {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1643574510563-23d913a4dda7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3N0JTIwYXBvY2FseXB0aWMlMjB3YXN0ZWxhbmQlMjBydWluc3xlbnwxfHx8fDE3NTcyNTQ1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="/image.png"
           alt="Post-apocalyptic wasteland"
           className="w-full h-full object-cover"
           width={1920}

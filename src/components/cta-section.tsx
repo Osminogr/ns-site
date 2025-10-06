@@ -41,7 +41,7 @@ export function CTASection({ onOpenLore }: CTASectionProps) {
           </div>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Твоя история ждёт своего начала. Присоединяйся к <span className="text-accent font-medium">Endless Story</span> 
+            Твоя история ждёт своего начала. Присоединяйся к <span className="text-accent font-medium">Neverending Story </span>  
             и стань частью бесконечной саги выживания, где каждое действие имеет значение.
           </p>
         </div>
