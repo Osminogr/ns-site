@@ -28,7 +28,7 @@ export default function Home() {
       
       <main>
         <div id="home">
-          <HeroSection />
+          <HeroSection onOpenLore={handleOpenLore} />
         </div>
         
         <IntroductionSection />
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
         
         <div id="join">
-          <HowToJoinSection />
+          <HowToJoinSection onOpenLore={handleOpenLore} />
         </div>
         
         <div id="faq">

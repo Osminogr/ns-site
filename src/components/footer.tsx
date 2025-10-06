@@ -101,9 +101,7 @@ export function Footer() {
               © 2024 Neverending Story. Неофициальный сервер по игре Vintage Story
             </p>
             <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-              <span>Текущий сезон: Глава III</span>
-              <span>•</span>
-              <span>Игроков онлайн: 24</span>
+              <span>Текущий сезон: Открытая бета</span>
             </div>
           </div>
         </div>

@@ -5,6 +5,10 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { links } from "@/config/links";
 
+interface HowToJoinSectionProps {
+  onOpenLore: () => void;
+}
+
 const steps = [
   {
     number: "01",
@@ -32,7 +36,7 @@ const steps = [
   }
 ];
 
-export function HowToJoinSection() {
+export function HowToJoinSection({ onOpenLore }: HowToJoinSectionProps) {
   return (
     <section className="py-20 px-6 bg-gradient-to-b from-background to-card/20">
       <div className="max-w-6xl mx-auto">
@@ -86,7 +90,7 @@ export function HowToJoinSection() {
                           if (step.number === "01") {
                             window.open(links.discord, '_blank');
                           } else if (step.number === "02") {
-                            window.open(links.internal.lore, '_blank');
+                            onOpenLore();
                           } else if (step.number === "03") {
                             window.open(links.internal.modpack, '_blank');
                           } else if (step.number === "04") {

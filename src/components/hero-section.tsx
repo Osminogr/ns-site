@@ -4,7 +4,11 @@ import { Button } from "@/components/ui/button";
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 import { links } from "@/config/links";
 
-export function HeroSection() {
+interface HeroSectionProps {
+  onOpenLore: () => void;
+}
+
+export function HeroSection({ onOpenLore }: HeroSectionProps) {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -44,7 +48,7 @@ export function HeroSection() {
             variant="outline" 
             size="lg" 
             className="px-8 py-6 text-lg border-accent text-accent hover:bg-accent hover:text-primary-foreground transition-all duration-300 transform hover:scale-105 shadow-lg"
-            onClick={() => window.open(links.internal.lore, '_blank')}
+            onClick={onOpenLore}
           >
             Узнать историю мира
           </Button>
